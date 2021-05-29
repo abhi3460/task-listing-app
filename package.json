@@ -1,0 +1,23 @@
+{
+  "name": "task-listing-app",
+  "version": "1.0.0",
+  "description": "Task Listing Application",
+  "main": "server.js",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.12"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Abhishek Vasvelia",
+  "license": "ISC"
+}

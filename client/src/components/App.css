@@ -1,0 +1,142 @@
+body {
+  padding: 30px;
+  background-color: #86c3fb;
+}
+.text-center {
+  text-align: center;
+}
+.completed-task-bg,
+.completed-task-bg > td,
+.completed-task-bg:hover > td,
+.completed-task-bg:focus > td {
+  color: white !important;
+  background-color: #b7eb8f !important;
+}
+.deleted-task-bg,
+.deleted-task-bg > td,
+.deleted-task-bg:hover > td,
+.deleted-task-bg:focus > td {
+  color: white !important;
+  background-color: #ff4d4f !important;
+}
+.nav-title {
+  color: white;
+  letter-spacing: 2px;
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+}
+.content-wrapper {
+  padding: 30px 30px 0;
+}
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+.App .ant-layout-footer {
+  padding: 24px 30px;
+}
+.ant-advanced-search-form,
+.table-wrapper {
+  padding: 24px 0;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+}
+.ant-form-inline .ant-form-item-with-help {
+  margin-bottom: 0;
+}
+.table-wrapper {
+  padding: 24px;
+  background: #f3f3f3;
+  margin-top: 30px;
+}
+/* td.ant-table-cell {
+    font-weight: 600;
+} */
+td.ant-table-cell:not(:last-child)::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 1.6em;
+  background-color: rgba(0, 0, 0, 0.06);
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  content: "";
+}
+/* .ant-table-expanded-row td {
+    background-color: #dcdcdc !important;
+    padding: 20px 40px 40px !important;
+} */
+.ant-table-expanded-row
+  .ant-table-empty
+  .ant-table-tbody
+  > tr.ant-table-placeholder
+  td {
+  background-color: #fafafa !important;
+}
+.subTaskSubmit {
+  margin-top: 20px;
+}
+.action-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.action-btns button:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer-btn button:not(:last-child) {
+  margin-right: 20px;
+}
+/* Start */
+.stopwatch-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 325px;
+  height: 130px;
+  margin: 10px auto 40px;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: 1px solid blue;
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: blue;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+/* End */
+@media only screen and (max-width: 350px) {
+  .nav-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  body {
+    padding: 10px;
+  }
+  .content-wrapper {
+    padding: 10px 10px 0;
+  }
+  .App .ant-layout-footer {
+    padding: 24px 10px;
+  }
+}
